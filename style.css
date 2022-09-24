@@ -7,19 +7,25 @@ body {
     background-color:  hsl(216, 12%, 8%);
 }
 
-.test {
-    width: 360px;
-    height: 340px;
+.container {
+    width: 370px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8%;
     background-color:#1b1a24;
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
     
 }
+
+.text {
+    margin: 12px
+}
+
 
 .main-rating {
     position: absolute;
@@ -44,42 +50,18 @@ p {
     font-size: 15px;
 }
 
-.rating-number a {
-    justify-content: center;
-    align-items: center;
+.img {
     background-color: hsl(213, 19%, 18%);
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    
+    display: flex;
+    width: 45px;
+    height: 45px;
     padding: 0px;
-    text-decoration: none;
-    text-align: center;
-    color: hsl(0, 0%, 100%);
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 2em;
-    border-radius: 25px;
-}
-
-.star a {
-    background-color: hsl(213, 19%, 18%);
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    padding: 0px;
-    text-decoration: none;
-    text-align: center;
     color: hsl(25, 97%, 53%);
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 2em;
     border-radius: 25px;
-    
+    margin-top: 20px;
+    margin: 12px;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .star a::before{
@@ -87,8 +69,8 @@ p {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding: 0px;
     text-decoration: none;
     text-align: center;
@@ -99,10 +81,55 @@ p {
     border-radius: 25px;
 }
 
+.rating-number {
+    
+}
+
+label {
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: hsl(213, 19%, 18%);
+    display:inline-flex;
+    
+    cursor: pointer;
+    width: 45px;
+    height: 45px;   
+    padding: 0px;   
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 25px;
+    margin: 12px;
+}
+
+label:hover {
+    background-color: hsl(217, 12%, 63%);
+}
+
+input {
+    display: none;
+    
+}
+
 button {
-     border-radius: 30%;
-     display: flex;
-     width: fit-content;
-     
-     
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    display: inline-flex;  
+    justify-content:space-evenly;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: hsl(25, 97%, 53%);
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }

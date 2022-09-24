@@ -19,53 +19,58 @@
 
   <!-- Rating state start -->
   <!--<header class="rating-container">-->
-
+  <header>
     <div class="main-rating">
 
-      <div class="test">
+      <div class="container">
       <div class="rating-card">
-        <div class="star">
-          <a href="#"></a>
+        <div class="img">
+          <img src="./images/icon-star.svg" alt="star icon" />
         </div>
-        <br>
-        <h2 style="color: hsl(0, 0%, 100%);">How did we do?</h2> 
+        
+        <div class="text"> 
+          <h2 style="color: hsl(0, 0%, 100%);">How did we do?</h2> 
         
         <p style="color: hsl(217, 12%, 63%);">Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
-          <br>
-
-          <div class="rating-number">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-         </div>
-         <br>
-         <br>
-         
-          <div>
-            <button type="submit" onclick="rate()">Submit</button>
-          </div>
+        </div>
+          
+          <form>
+            <div class="rating-number">
+              <input type="radio" value="1" id="one" name="rating-number">
+              <label for="one">1</label>
+              <input type="radio" value="2" id="two" name="rating-number">
+              <label for="one">2</label>
+              <input type="radio" value="3" id="three" name="rating-number">
+              <label for="one">3</label>
+              <input type="radio" value="4" id="four" name="rating-number">
+              <label for="one">4</label>
+              <input type="radio" value="5" id="five" name="rating-number">
+              <label for="one">5</label>
+            </div>
+            <br>
+            <div>
+              <button type="submit" onclick="rate()">SUBMIT</button>
+            </div>
+          </form> 
       </div>
     </div>
    </div>
-  
   </header>
+  
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
- <!-- You selected <!-- Add rating here --> out of 5
+  <div>You selected <!-- Add rating here --> out of 5
 
-  <!--Thank you!
+  Thank you!
 
    We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!  -->
- 
+  </div>
   <!-- Thank you state end -->
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
