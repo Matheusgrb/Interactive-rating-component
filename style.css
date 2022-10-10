@@ -112,7 +112,7 @@
   }
   
   .container .card .rating-number .rating-btn:hover {
-    background-color: #fb7413;
+    background-color: #959eac;
     cursor: pointer;
   }
   
@@ -121,7 +121,7 @@
   }
   
   .container .card .rating-number .active {
-    background-color: #959eac;
+    background-color: #fb7413;
   }
   
   .container .card .rating-number .active div {
