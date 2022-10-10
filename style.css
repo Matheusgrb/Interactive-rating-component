@@ -1,135 +1,248 @@
-@import url('https://fonts.google.com/specimen/Overpass');
-
-
-body {
-    font-family: 'overpass', sans-serif;
-    font-weight: 700;
-    background-color:  hsl(216, 12%, 8%);
-}
-
-.container {
-    width: 370px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8%;
-    background-color:#1b1a24;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    
-}
-
-.text {
-    margin: 12px
-}
-
-
-.main-rating {
-    position: absolute;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #121417;
+  }
+  
+  .container {
+    width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-rating-card {
-    
-    background-color:pink;
-    width: 350px;
-    height: 350px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-}
-
-p {
-    font-size: 15px;
-}
-
-.img {
-    background-color: hsl(213, 19%, 18%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .container .card {
+    background: radial-gradient(rgba(25, 38, 54, 0.6), rgba(25, 32, 43, 0.6));
+    width: 88%;
+    max-width: 41rem;
+    border-radius: 8%;
+    padding: 2.5rem;
+  }
+  
+  .container .card .star {
+    background-color: rgba(124, 135, 152, 0.2);
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 45px;
-    height: 45px;
-    padding: 0px;
-    color: hsl(25, 97%, 53%);
-    border-radius: 25px;
-    margin-top: 20px;
-    margin: 12px;
-    justify-content:space-evenly;
-    align-items: center;
-}
-
-.star a::before{
-    content: '⭐';
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .container .card .star img {
+    width: 1.4rem;
+  }
+  
+  .container .card .title {
+    font-size: 2.4rem;
+    color: white;
+    margin-top: 1.9rem;
+  }
+  
+  .container .card .text {
+    color: #959eac;
+    font-size: 1.415rem;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+  }
+  
+  .container .card .rating-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 45px;
-    height: 45px;
-    padding: 0px;
-    text-decoration: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .container .card .rating-number .rating-btn {
+    color: #959eac;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: rgba(124, 135, 152, 0.2);
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2.6rem;
+  }
+  
+  .container .card .number .rating-btn div {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  
+  .container .card .rating-number .rating-btn:hover {
+    background-color: #fb7413;
+    cursor: pointer;
+  }
+  
+  .container .card .rating-number .rating-btn:hover div {
+    color: white;
+  }
+  
+  .container .card .rating-number .active {
+    background-color: #959eac;
+  }
+  
+  .container .card .rating-number .active div {
+    color: white;
+  }
+  
+  .container .card .submit {
+    background-color: #fb7413;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2.5rem;
+    padding: 1.3rem;
+    border-radius: 4rem;
+  }
+  
+  .container .card .submit div {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .container .card .submit:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .container .card .submit:hover div {
+    color: #fb7413;
+    font-weight: 700;
+  }
+  
+  .container .card .card-hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .container .card .card-hidden img {
+    width: 14.5rem;
+    margin-top: 1rem;
+  }
+  
+  .container .card .card-hidden .text {
     text-align: center;
-    color: hsl(25, 97%, 53%);
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 2em;
-    border-radius: 25px;
-}
-
-.rating-number {
-    
-}
-
-label {
-    justify-content:space-evenly;
-    align-items: center;
-    background-color: hsl(213, 19%, 18%);
-    display:inline-flex;
-    
-    cursor: pointer;
-    width: 45px;
-    height: 45px;   
-    padding: 0px;   
-    color: hsl(0, 0%, 100%);
-    font-size: 12px;
-    font-weight: normal;
-    border-radius: 25px;
-    margin: 12px;
-}
-
-label:hover {
-    background-color: hsl(217, 12%, 63%);
-}
-
-input {
+    margin-bottom: 1.5rem;
+  }
+  
+  .container .card .card-hidden .result {
+    background-color: rgba(124, 135, 152, 0.2);
+    padding: 0.8rem 1.4rem;
+    border-radius: 2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .container .card .card-hidden .result div {
+    color: #fb7413;
+    font-size: 1.4rem;
+  }
+  
+  .container .card .hide {
     display: none;
-    
-}
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .container .card {
+      padding: 3.0rem;
+      border-radius: 3rem;
+    }
+    .container .card .star {
+      width: 5.0rem;
+      height: 5.0rem;
+    }
+    .container .card .star img {
+      width: 1.7rem;
+    }
+    .container .card .title {
+      margin-top: 3.4rem;
+      font-size: 2.77rem;
+    }
+    .container .card .text {
+      margin-top: 0.9rem;
+      line-height: 2.4rem;
+      font-size: 1.505rem;
+    }
+    .container .card .rating-number .rating-btn {
+      width: 5.1rem;
+      height: 5.1rem;
+      font-size: 1.6rem;
+    }
+    .container .card .rating-wnumber .rating-btn div {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    .container .card .submit {
+      margin-top: 3.2rem;
+    }
 
-button {
-    color: hsl(0, 0%, 100%);
-    font-size: 14px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    border-radius: 40px;
-    display: inline-flex;  
-    justify-content:space-evenly;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    background-color: hsl(25, 97%, 53%);
-    justify-content:space-evenly;
-    align-items: center;
+    .attribution {
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      margin-top: 2rem;
+    }
     
-}
-
-button:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
-}
+    .attribution a {
+      color: hsl(228, 47%, 61%);
+    }
+  }
